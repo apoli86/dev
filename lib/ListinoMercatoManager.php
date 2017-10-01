@@ -167,7 +167,7 @@
 		private function getDatesInMonth($month, $year)
         {
 			$today = mktime(0, 0, 0, date("m"), date("d"), date("Y"));
-            $num = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+            $num = date('t', mktime(0, 0, 0, $month, 1, $year)); //cal_days_in_month(CAL_GREGORIAN, $month, $year);
             $datesMonth=array();
             for($i=1;$i<=$num;$i++)
             {
