@@ -18,7 +18,7 @@
 				<head>
 					<link rel="stylesheet" type="text/css" href="css/template.css">
 					<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-					<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+					<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 					<script>
 						function DatasourceBuilder()
 						{
