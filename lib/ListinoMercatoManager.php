@@ -91,7 +91,7 @@
 			for($year = $minYear; $year <= $maxYear; $year++)
 			{
 				$minMonth = $year == $minYear ? date("m", $minDate) : 1;
-				$maxMonth = $year == $minYear ? 12 : date("m");
+				$maxMonth = $year < $maxYear ? 12 : date("m");
 				$monthsInYear = array();
 				
 				for($month = $minMonth; $month <= $maxMonth; $month++)
