@@ -40,10 +40,6 @@
 		
 		private function downloadHelper($url, $path)
 		{
-			$newf = fopen($path, "wb");
-			fwrite($newf, $url);
-			fclose($newf);
-			/*
 			$file = fopen ($url, "rb");
 			if ($file) {
 				$newf = fopen($path, "wb");
@@ -63,7 +59,7 @@
 
 			if ($newf) {
 				fclose($newf);
-			}*/
+			}
 		}
 	}
 ?>
