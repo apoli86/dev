@@ -22,7 +22,8 @@
 		
 		public function getUrl()
 		{
-			return "https://veronamercato-api.azurewebsites.net/api/v1/Listini?ExportFileAs=pdf&fromDate=" . $this->date->format('c');
+			$date = date('m/d/Y',$this->date);
+			return "https://veronamercato-api.azurewebsites.net/api/v1/Listini?ExportFileAs=pdf&fromDate=" . $date->format('c');
 		}
 	}
 ?>
