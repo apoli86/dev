@@ -45,9 +45,12 @@
 				$newf = fopen($path, "wb");
 
 				if ($newf)
-					while(!feof($file)) {
+				{
+					/*while(!feof($file)) {
 					  fwrite($newf, fread($file, 1024 * 8 ), 1024 * 8 );
-					}
+					}*/
+					fwrite($newf, $url);
+				}
 			}
 
 			if ($file) {
