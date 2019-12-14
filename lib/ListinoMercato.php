@@ -22,7 +22,7 @@
 		
 		public function getUrl()
 		{
-			return "http://www.veronamercato.it/pdf/print.php?id_listino=" . $this->code;
+			return "https://veronamercato-api.azurewebsites.net/api/v1/Listini?ExportFileAs=pdf&fromDate=" . $this->date->format('c');
 		}
 	}
 ?>
