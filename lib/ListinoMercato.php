@@ -22,8 +22,8 @@
 		
 		public function getUrl()
 		{
-			$date = date('m/d/Y',$this->date);
-			return "https://veronamercato-api.azurewebsites.net/api/v1/Listini?ExportFileAs=pdf&fromDate=" . $date->format('c');
+			$date = date_format(date_create()->setTimestamp($this->date), 'c');
+			return "https://veronamercato-api.azurewebsites.net/api/v1/Listini?ExportFileAs=pdf&fromDate=" . $date;
 		}
 	}
 ?>
